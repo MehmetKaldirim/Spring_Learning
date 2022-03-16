@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-00-Spring-Coupling/Spring-00-Spring-Coupling.iml" filepath="$PROJECT_DIR$/Spring-00-Spring-Coupling/Spring-00-Spring-Coupling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-08-Spring-MVC-Model/Spring-08-Spring-MVC-Model.iml" filepath="$PROJECT_DIR$/Spring-08-Spring-MVC-Model/Spring-08-Spring-MVC-Model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-09-Spring-Thymeleaf/Spring-09-Spring-Thymeleaf.iml" filepath="$PROJECT_DIR$/Spring-09-Spring-Thymeleaf/Spring-09-Spring-Thymeleaf.iml" />
+    </modules>
+  </component>
+</project>
