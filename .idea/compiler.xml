@@ -7,15 +7,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring-00-Spring-Coupling" />
         <module name="Spring-09-Spring-Thymeleaf" />
+        <module name="Spring-06-SpringBoot-Demo" />
+        <module name="Spring-00-Spring-Coupling" />
+        <module name="Spring-02-Core-Wiring" />
         <module name="Spring-08-Spring-MVC-Model" />
+        <module name="Spring-04-Abstraction" />
+        <module name="Spring-01-Core-IoC" />
+        <module name="Spring-03-Core-DI" />
+        <module name="Spring-05-Core-BeanScope" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Spring-00-Coupling" target="14" />
       <module name="Spring-00-Spring-Coupling" target="11" />
-      <module name="Spring-01-Core-IoC" target="14" />
+      <module name="Spring-01-Core-IoC" target="11" />
+      <module name="Spring-01-Spring-Core" target="11" />
+      <module name="Spring-01-Spring-Core-IoC" target="11" />
+      <module name="Spring-02-Core-Wiring" target="11" />
+      <module name="Spring-03-Core-DependencyInjection" target="11" />
+      <module name="Spring-03-Core-DI" target="11" />
+      <module name="Spring-04-Abstraction" target="11" />
+      <module name="Spring-05-Core-BeanScope" target="11" />
       <module name="Spring-06-SpringBoot-Demo" target="11" />
       <module name="Spring-07-Spring-MVC-Controller" target="11" />
       <module name="Spring-08-Spring-MVC-Model" target="11" />
