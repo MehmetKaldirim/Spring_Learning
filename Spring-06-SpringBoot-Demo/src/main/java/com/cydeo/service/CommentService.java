@@ -4,10 +4,17 @@ import com.cydeo.model.Comment;
 import com.cydeo.proxy.CommentNotificationProxy;
 import com.cydeo.repository.CommentRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
+import java.util.Arrays;
 
 @Component
 public class CommentService {
+
+    @Value("${days}")
+    private String[] days;
+
 
 
     private final CommentRepository commentRepository;
@@ -21,5 +28,6 @@ public class CommentService {
     public void publishComment(Comment comment){
         commentRepository.storeComment(comment);
         commentNotificationProxy.sendComment(comment);
+        System.out.println(Arrays.toString(days));
     }
 }

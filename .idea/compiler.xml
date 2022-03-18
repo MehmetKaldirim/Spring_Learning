@@ -14,6 +14,7 @@
         <module name="Spring-08-Spring-MVC-Model" />
         <module name="Spring-04-Abstraction" />
         <module name="Spring-01-Core-IoC" />
+        <module name="Spring-07-MVC-Controller" />
         <module name="Spring-03-Core-DI" />
         <module name="Spring-05-Core-BeanScope" />
       </profile>
@@ -30,6 +31,7 @@
       <module name="Spring-04-Abstraction" target="11" />
       <module name="Spring-05-Core-BeanScope" target="11" />
       <module name="Spring-06-SpringBoot-Demo" target="11" />
+      <module name="Spring-07-MVC-Controller" target="11" />
       <module name="Spring-07-Spring-MVC-Controller" target="11" />
       <module name="Spring-08-Spring-MVC-Model" target="11" />
       <module name="Spring-09-Spring-Thymeleaf" target="11" />
@@ -38,6 +40,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Spring-06-SpringBoot-Demo" options="-parameters" />
+      <module name="Spring-07-MVC-Controller" options="-parameters" />
       <module name="Spring-07-Spring-MVC-Controller" options="-parameters" />
       <module name="Spring-08-Spring-MVC-Model" options="-parameters" />
       <module name="Spring-09-Spring-Thymeleaf" options="-parameters" />
