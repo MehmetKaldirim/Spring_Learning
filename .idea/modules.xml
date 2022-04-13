@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-00-Spring-Coupling/Spring-00-Spring-Coupling.iml" filepath="$PROJECT_DIR$/Spring-00-Spring-Coupling/Spring-00-Spring-Coupling.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-01-Core-IoC/Spring-01-Core-IoC.iml" filepath="$PROJECT_DIR$/Spring-01-Core-IoC/Spring-01-Core-IoC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-02-Core-Wiring/Spring-02-Core-Wiring.iml" filepath="$PROJECT_DIR$/Spring-02-Core-Wiring/Spring-02-Core-Wiring.iml" />
@@ -13,6 +12,8 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-07-MVC-Controller/Spring-07-MVC-Controller.iml" filepath="$PROJECT_DIR$/Spring-07-MVC-Controller/Spring-07-MVC-Controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-08-Spring-MVC-Model/Spring-08-Spring-MVC-Model.iml" filepath="$PROJECT_DIR$/Spring-08-Spring-MVC-Model/Spring-08-Spring-MVC-Model.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-09-Spring-Thymeleaf/Spring-09-Spring-Thymeleaf.iml" filepath="$PROJECT_DIR$/Spring-09-Spring-Thymeleaf/Spring-09-Spring-Thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-10-ORM-TableCreation/Spring-10-ORM-TableCreation.iml" filepath="$PROJECT_DIR$/Spring-10-ORM-TableCreation/Spring-10-ORM-TableCreation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring_Learning.iml" filepath="$PROJECT_DIR$/Spring_Learning.iml" />
     </modules>
   </component>
 </project>

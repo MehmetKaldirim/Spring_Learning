@@ -14,10 +14,14 @@
         <option value="$PROJECT_DIR$/Spring-05-Core-BeanScope/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-06-SpringBoot-Demo/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-07-MVC-Controller/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-10-ORM-TableCreation/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
   </component>
 </project>
