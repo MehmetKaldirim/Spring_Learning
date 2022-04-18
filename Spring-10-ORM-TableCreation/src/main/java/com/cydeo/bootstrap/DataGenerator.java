@@ -19,10 +19,13 @@ public class DataGenerator implements CommandLineRunner {
         Car c1 = new Car("BMW","M5");
         Car c2 = new Car("Honda","Civic");
         Car c3 = new Car("Toyota","Corella");
+        Car c4 = new Car("beDEW","Italy");
+
 
         carRepository.save(c1);
         carRepository.save(c2);
         carRepository.save(c3);
+        carRepository.save(c4);
 
     }
 }
