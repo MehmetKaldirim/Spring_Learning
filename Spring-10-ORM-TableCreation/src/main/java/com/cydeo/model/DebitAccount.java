@@ -1,4 +1,4 @@
-package com.cydeo.entity;
+package com.cydeo.model;
 
 import javax.persistence.Entity;
 import java.math.BigDecimal;

@@ -1,15 +1,13 @@
-package com.cydeo.entity;
+package com.cydeo.model;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
 
-@Entity // needs always primary key
-public class Employee {
-
+@MappedSuperclass
+public class BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String name;
+    private Long id;
 }

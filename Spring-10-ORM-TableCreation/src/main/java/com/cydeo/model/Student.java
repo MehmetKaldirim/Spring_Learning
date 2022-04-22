@@ -1,7 +1,6 @@
-package com.cydeo.entity;
+package com.cydeo.model;
 
 import com.cydeo.enums.Gender;
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 
 
 import javax.persistence.*;
