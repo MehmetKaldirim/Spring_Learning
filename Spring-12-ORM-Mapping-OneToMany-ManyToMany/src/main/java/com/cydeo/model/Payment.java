@@ -39,6 +39,11 @@ public class Payment extends BaseEntity{
     @JoinColumn(name="merchant")
     private Merchant merchant;
 
+    @ManyToOne()//it is one way we can separate it
+    //@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    @JoinColumn(name="customer")
+    private Customer customer;
+
     public Payment(LocalDate createdDate, BigDecimal amount, Status paymentStatus) {
         this.createdDate = createdDate;
         this.amount = amount;
