@@ -8,15 +8,15 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Entity
-@Table(name="students")
+@Table(name="student")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name ="studentFirstName",length=14)
+    //@Column(name ="studentFirstName",length=14)
     private String firstName;
-    @Column(name ="studentLastName")
+    //@Column(name ="studentLastName")
     private String lastName;
     private String email;
 
