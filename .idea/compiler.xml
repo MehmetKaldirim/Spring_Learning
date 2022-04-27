@@ -45,6 +45,7 @@
       <module name="Spring-12-ORM-Mapping-OneToMany-ManyToMany" target="11" />
       <module name="Spring-13-ORM-CinemaLab" target="11" />
       <module name="Spring-14-ORM-Queries" target="11" />
+      <module name="Spring-14-ORM-Queriess" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -59,6 +60,7 @@
       <module name="Spring-12-ORM-Mapping-OneToMany-ManyToMany" options="-parameters" />
       <module name="Spring-13-ORM-CinemaLab" options="-parameters" />
       <module name="Spring-14-ORM-Queries" options="-parameters" />
+      <module name="Spring-14-ORM-Queriess" options="-parameters" />
     </option>
   </component>
 </project>
