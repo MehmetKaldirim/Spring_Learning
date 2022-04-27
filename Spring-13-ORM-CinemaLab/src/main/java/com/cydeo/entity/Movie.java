@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -16,9 +17,11 @@ import java.util.List;
 public class Movie extends  BaseEntity{
 
     private String name;
+
     @Column(columnDefinition = "DATE")
-    private LocalDate releaseDate;
+    private LocalDateTime releaseDate;
     private Integer duration;
+
     @Column(columnDefinition = "text")
     private String summary;
     @Enumerated(EnumType.STRING)
