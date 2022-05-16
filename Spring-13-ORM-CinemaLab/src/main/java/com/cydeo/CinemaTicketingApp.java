@@ -9,13 +9,13 @@ import org.springframework.context.annotation.Bean;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-public class Spring13OrmCinemaLabApplication {
+public class CinemaTicketingApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(Spring13OrmCinemaLabApplication.class, args);
+        SpringApplication.run(CinemaTicketingApp.class, args);
     }
 
-    //first entity created than make migration since my table is not ready, i say flysearch database
+    //first entity created than flyway to do migration since my table is not ready, i say flyway search database
     @Bean
     public MigrateResult migrateResult(DataSource dataSource){
         return Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
