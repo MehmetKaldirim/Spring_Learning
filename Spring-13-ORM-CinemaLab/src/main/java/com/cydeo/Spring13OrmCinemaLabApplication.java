@@ -15,8 +15,9 @@ public class Spring13OrmCinemaLabApplication {
         SpringApplication.run(Spring13OrmCinemaLabApplication.class, args);
     }
 
-    @Bean //first entity created than make migration since my table is not ready, i say flysearch database
-    public MigrateResult migrateResult(DataSource dataSource) {
+    //first entity created than make migration since my table is not ready, i say flysearch database
+    @Bean
+    public MigrateResult migrateResult(DataSource dataSource){
         return Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
     }
 }
