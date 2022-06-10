@@ -1,10 +1,13 @@
 package com.cydeo.entity;
 
 
+import com.cydeo.dto.CourseDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.http.HttpStatus;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -23,7 +26,7 @@ public class ResponseWrapper {
         this.data = data;
     }
 
-    public ResponseWrapper(String message) {
+    public ResponseWrapper(boolean b, String message, List<CourseDTO> courses, boolean b1) {
         this.message = message;
         this.code = HttpStatus.OK.value();
         this.success = true;

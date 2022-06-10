@@ -25,7 +25,7 @@ public class CourseController_ResponseWrapper {
         return ResponseEntity
                 .status(HttpStatus.ACCEPTED)
                 .header("Version","Cydeo.V3")
-                .body(new ResponseWrapper("successfully retrieved",courseService.getCourses()));
+                .body(new ResponseWrapper(true, "successfully retrieved",courseService.getCourses(),true));
     }
 
     @GetMapping("{id}")
