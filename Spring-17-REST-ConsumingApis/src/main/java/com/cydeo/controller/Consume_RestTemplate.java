@@ -33,8 +33,8 @@ public class Consume_RestTemplate {
 
     @GetMapping("{id}")
     public Object readUser(@PathVariable("id") Integer id){
-        String URL = URI + "{id}";
-        return restTemplate.getForObject(URL,Object.class,id);
+        String newURI= URI + "/{id}";
+        return restTemplate.getForObject(newURI,Object.class,id);
     }
 
     @GetMapping("/test")

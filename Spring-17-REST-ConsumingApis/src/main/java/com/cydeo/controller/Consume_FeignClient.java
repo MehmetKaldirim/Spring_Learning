@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Consume_FeignClient {
 
-    private final UserClient userClient;
+   private final UserClient userClient;
     private final EmployeeClient employeeClient;
 
     public Consume_FeignClient(UserClient userClient, EmployeeClient employeeClient) {
@@ -19,13 +19,13 @@ public class Consume_FeignClient {
         this.employeeClient = employeeClient;
     }
 
-    @GetMapping("api/v1/users")
+    @GetMapping("/api/v1/users")
     public ResponseEntity<ResponseWrapper> getUsers(){
 
         return ResponseEntity.ok(new ResponseWrapper("UserList Retrieved",userClient.getUsers()));
     }
 
-    @GetMapping("api/v1/employee")
+    @GetMapping("/api/v1/employee")
     public ResponseEntity<ResponseWrapper> getEmployees(){
 
         return ResponseEntity.ok(new ResponseWrapper("Success Retrieved",employeeClient.getEmployee("6298ebfecd0551211fce37a6")));

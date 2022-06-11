@@ -45,6 +45,15 @@ public class Consume_WebClient {
 
     }
 
+    @GetMapping("/flux-get-genre")
+    public Flux<Genre> readAllGenre(){
+
+
+        return Flux.fromIterable(genreRepository.findAll());
+
+
+    }
+
     @PostMapping("/create-genre")
     public Mono<Genre> createGenre(@RequestBody Genre genre){
 
