@@ -25,7 +25,7 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    @Operation(summary = "Read all users")
+    @Operation(summary = "Read all Users")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Successfully retrieved users (OK)",
                     content = {@Content(mediaType = "application/json")}),
