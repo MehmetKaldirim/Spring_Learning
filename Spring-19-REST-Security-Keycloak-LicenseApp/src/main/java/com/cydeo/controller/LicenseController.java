@@ -19,6 +19,7 @@ public class LicenseController {
         this.licenseService = licenseService;
     }
 
+    @RolesAllowed({"ADMIN", "USER"})
     @GetMapping("/{licenseId}")
     public ResponseEntity<License> getLicense(@PathVariable("organizationId") Long organizationId, @PathVariable("licenseId") Long licenseId) throws Exception {
         License license = licenseService.getLicense(licenseId, organizationId);
