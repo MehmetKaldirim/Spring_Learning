@@ -13,12 +13,12 @@ class CalculatorTest {
 
     @BeforeEach
     void setUpEach(){
-        System.out.println("Before is executed");
+        System.out.println("Before each is executed");
     }
 
     @AfterEach
     void tearDownEach(){
-        System.out.println("After is executed");
+        System.out.println("After each is executed");
     }
 
     @Test

@@ -12,7 +12,7 @@ public class CalculatorParemeterizedTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {3, 6, 19})
+    @ValueSource(ints = {3, 6, 9})
     void testCase2(int number) {
         Assertions.assertEquals(0, number % 3);
     }
@@ -25,6 +25,8 @@ public class CalculatorParemeterizedTest {
     void testCase3(String args) {
         Assertions.assertTrue(!args.isEmpty());
     }
+
+
     @ParameterizedTest
     @MethodSource("stringProvider")
     void testCase4( String arg) {
@@ -36,13 +38,13 @@ public class CalculatorParemeterizedTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"10,20,30", "20,40,60", "30,20,90"})
+    @CsvSource({"10,20,30", "20,40,60", "30,20,50"})
     void testCase5( int num1, int num2, int result) {
         Assertions.assertEquals(result,Calculator.add(num1,num2));
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/simple-data.csv", numLinesToSkip = 1)
+    @CsvFileSource(resources = "/sample-data.csv", numLinesToSkip = 1)
     void testCase6( int num1, int num2, int result) {
         Assertions.assertEquals(result,Calculator.add(num1,num2));
     }
