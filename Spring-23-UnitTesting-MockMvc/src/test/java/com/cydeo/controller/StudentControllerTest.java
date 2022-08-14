@@ -10,6 +10,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.util.Arrays;
@@ -30,9 +31,11 @@ class StudentControllerTest {
     @Test
     void getStudent() throws Exception {
 
-        mvc.perform(MockMvcRequestBuilders
-                .get("/student")
-                .accept(MediaType.APPLICATION_JSON))
+       // RequestBuilder request = MockMvcRequestBuilders.get("/student")
+         //       .accept(MediaType.APPLICATION_JSON);
+
+        mvc.perform(MockMvcRequestBuilders.get("/student")
+                        .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().json("{\"id\": 0, \"firstName\": \"Mike\", \"lastName\": \"Smith\", \"age\": 20}"))
                 .andReturn();
@@ -44,7 +47,7 @@ class StudentControllerTest {
 
         String expected = "{\"id\": 0, \"firstName\": \"Mike\", \"lastName\": \"Smith\"}";
         String actual = "{\"id\": 0, \"firstName\": \"Mike\", \"lastName\": \"Smith\", \"age\": 20}";
-
+        //if u  have everthing  from expected , though aditional input if u say strict false , it pass the test..
         JSONAssert.assertEquals(expected, actual, false);
 
     }
