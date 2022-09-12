@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
+import java.time.LocalDate;
 
 @Component
 public class DataGenerator implements CommandLineRunner {
@@ -52,12 +53,14 @@ public class DataGenerator implements CommandLineRunner {
 
         System.out.println("getEmployeeDetail:" + employeeRepository.getEmployeeDetail());
         System.out.println("getEmployeeSalary:" + employeeRepository.getEmployeeSalary());
+        System.out.println("getEmployee details email and salary:" + employeeRepository.getEmployeeDetail("sdubber7@t-online.de",101066));
+        System.out.println("getEmployee BEFORE DATE:" + employeeRepository.getEmployeeHireDateBefore(LocalDate.of(2010,8,27)));
 
 
 
         System.out.println("-----------------EMPLOYEE  END-----------------");
 
-        System.out.println("-----------------COURSE START-----------------");
+      /*  System.out.println("-----------------COURSE START-----------------");
 
         courseRepository.findByCategory("Spring").forEach(System.out::println);
 
@@ -85,6 +88,6 @@ public class DataGenerator implements CommandLineRunner {
 
         System.out.println("-----------------COURSE  END-----------------");
 
-
+*/
     }
 }
